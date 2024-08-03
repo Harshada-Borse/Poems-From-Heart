@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ---------------------Header and Nav---------------- */
+#header {
+    width: 100%;
+    height: 100vh;
+    /* Cover the full viewport height */
+    background-image: url("./assets/Profile_Photo.png");
+    background-size: calc(400px + 100px);
+    /* background-size: cover; */
+    /* background-position: right; */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom 5% right 20%;
+}
+
+.navbar {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 10px;
+    width: 170px;
+    border-radius: 10px;
+}
+
+nav img{
+    flex-basis: 20%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-basis: 55%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #c625c9;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.header-text h2 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.header-text h2 span {
+    color: #c625c9;
+}
+
+.heart {
+    color: pink;
+    font-size: 25px;
+}
+
+/* -------------------About Me----------------- */
+#about-me {
+    width: 100vw;
+    padding: 80px 15px;
+    color: #ababab;
+    background-color: #2c2c2c;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-col1 {
+    flex-basis: 35%;
+    padding-right: 20px;
+}
+
+.about-col1 img {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 300px;
+    height: auto;
+    margin-left: 10rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-col1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #c625c9;
+}
+
+.about-col2 {
+    flex-basis: 60%;
+    padding-left: 20px;
+}
+
+#title-setup {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about-para {
+    font-size: 18px;
+    word-spacing: 0.2rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 10rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-bold {
+    font-size: 22px;
+    color: #c625c9;
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.about-para:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 8px #c625c9;
+}
+
+/* --------------------My Poems--------------- */
+#my-poems {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.poem-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 4px #c625c9;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+}
+
+.btn-outline:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #8e3890;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #c625c9;
+}
+
+/* ----------------------Contact Me---------------- */
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.contact-col1,
+.contact-col2 {
+    flex-basis: 100%;
+    max-width: 48%;
+    /* Adjusted for proper spacing */
+    margin-bottom: 30px;
+}
+
+.contact-col1 p {
+    margin-top: 30px;
+}
+
+.contact-col1 p i {
+    color: #c625c9;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icon a:hover {
+    color: #c625c9;
+    transform: translateY(-5px);
+}
+
+.contact-col2 form {
+    width: 100%;
+    margin-bottom: 20px;
+    /* Added margin-bottom for separation */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    /* Remove blue outline */
+    background: #333333;
+    /* Optional: Change background on focus */
+}
+
+form button:focus {
+    outline: none;
+    /* Remove blue outline */
+}
+
+/* -------------------Copy Right------------------ */
+.copy-right {
+    /* width: 100vw; */
+    text-align: center;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 25px 0;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-y:auto;
+        width: 100vw;
+
+    }
+    .header {
+        background-position: bottom 5% right 0%;
+        width: 100%;
+        height: 100vh;
+        background-image: url("./assets/Profile_Photo.png");
+        background-size: cover;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .header-text {
+        margin-top: 50%;
+        font-size: 20px;
+    }
+
+    .header-text h2 {
+        font-size: 30px;
+    }
+
+    b {
+        font-size: 45px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #c625c9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #title-setup{
+        font-size: 40px;
+        font-weight: 500;
+        
+    }
+
+    /* ----------------------About Me------------------- */
+    .about-col1, .about-col2{
+        flex-basis: 100%;
+    }
+
+    .about-col1{
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-col1 img{
+        margin-left: 2.5rem;
+        height: 350px;
+        width: 300px;
+        border-radius: 15px;
+    }
+
+    .about-col2{
+        flex-basis: 100%;
+    }
+
+    .about-para{
+        margin-right: 2rem;
+        margin-left: 1rem;
+        font-size: 15px;
+    }
+
+    .about-bold{
+        font-size: 20px;
+    }
+
+    #about-me{
+        /* height:100vh; */
+        width: 100vw;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    /* --------------------------My Poems----------------------------- */
+    #my-poems{
+        margin: 30px 0;
+    }
+
+    .card{
+        width: 250px;
+        height: 350px;
+        margin: auto;
+    }
+
+    /* -------------------------Contact Me------------------------------ */
+    .contact-col1, .contact-col2{
+        width: 100%;
+        
+    }
+
+    .contact-row{
+        display: inline-block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .social-icon{
+        display: flex;
+    }
+
+    .contact-col1 p {
+        display: flex;
+    }
+
+    form input, form textarea{
+        width: 340px;
+    }
+
+    /* --------------------Copy Right------------------- */
+    .copy-right{
+        height: 100px;
+    }
+
+    .title-setup{
+        white-space: nowrap;
+    }
+}
+
+#msg{
+    color: #16d05d;
+    margin-top: 10px;
+    display: block;
+}
