@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome</title>
 </head>
 <body>
 <div align="center">
@@ -40,7 +39,7 @@
 
 <h2>Visit the Website</h2>
 <a href="https://poetryfromheart.netlify.app/">Harshada's Poetic World 😊</a>
-
+<br>
 <p><code>Thank you!🧑‍💻</code></p>
 </body>
 </html>
