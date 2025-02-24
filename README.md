@@ -38,7 +38,7 @@
 </ul>
 
 <h2>Visit the Website</h2>
-<a href="https://poems-from-heart.netlify.app/" style="text-decoration: none;">Harshada's Poetic World <p>😊</p></a>
+<a href="https://poems-from-heart.netlify.app/" style="text-decoration: none;">Harshada's Poetic World </a><p>😊</p>
 <br>
 <p><code>Thank you!🧑‍💻</code></p>
 </body>
