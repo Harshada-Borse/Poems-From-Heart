@@ -205,6 +205,7 @@ nav ul li a:hover{
     border-radius: 8px;
     width: 100%;
     max-width: 300px;
+    height: 40%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -215,7 +216,7 @@ nav ul li a:hover{
 
 .card-img {
     width: 100%;
-    height: auto;
+    height: 50%;
     display: block;
 }
 
